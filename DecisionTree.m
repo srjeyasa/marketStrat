@@ -1,3 +1,21 @@
+%{
+
+-This program implements and solves a decision tree for maximimizing
+market share using results of Yes/No surveys. 
+
+-Surveys are conducted over 3 phases; after every phase of surveys,
+a decision is made whether to market the product, continue to the next phase
+or terminate the product.
+
+-A layout of the decision tree solved is shown in TreeLayout.jpg. 
+Details of this project can be found in MarketingStrategy.pdf
+
+-This code can be modified for any number of surveys per phase but can only deal
+with a maximum of 3 phases.
+
+%}
+
+
 %Parameters
 maxPhase = 3; %maximum number of survey phases
 surveySize = 55; %number of surveys per phase
@@ -21,11 +39,16 @@ for p1=0:surveySize %number of yes votes in phase 1
         for p3=0:surveySize %number of yes votes in phase 3
             yesVotes = [p1 p2 p3];
             %given number of yes votes per phase,
+			
             for i=1:maxPhase
                 %calculate probability of this combination of yes votes
                 sumProb=0;
+				
                 for j=1:length(m)
-                    probYesVotesByMarket(i,j)= marketProb(i,j)*nchoosek(surveySize,yesVotes(i))*(m(j)^yesVotes(i))*((1-m(j))^(surveySize-yesVotes(i)));
+                    probYesVotesByMarket(i,j)= marketProb(i,j)...
+					*nchoosek(surveySize,yesVotes(i))*(m(j)^yesVotes(i))...
+										*((1-m(j))^(surveySize-yesVotes(i)));
+										
                     sumProb = sumProb + probYesVotesByMarket(i,j);
                 end
                 probYesVotes(p1+1,p2+1,p3+1,i)=sumProb;
