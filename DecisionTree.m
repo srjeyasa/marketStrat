@@ -7,8 +7,9 @@ market share using results of Yes/No surveys.
 a decision is made whether to market the product, continue to the next phase
 or terminate the product.
 
--A layout of the decision tree solved is shown in TreeLayout.jpg. 
-Details of this project can be found in MarketingStrategy.pdf
+-A layout of the decision tree solved is shown in "TreeLayout.jpeg"
+Details of this project can be found in "Project Report.pdf"
+The survey strategy is provided as a table in "Survey Strategy.pdf"
 
 -This code can be modified for any number of surveys per phase but can only deal
 with a maximum of 3 phases.
