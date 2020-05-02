@@ -23,9 +23,9 @@ surveySize = 55; %number of surveys per phase
 m=[0.1 0.2 0.3]; %market share percentages
 yesVotes=zeros(1,3); %vector to store number of yes votes per phase
 MarketSize = 400*120; %market units
-CostPerMarketUnit = 0.78; %Cost price
+CostPerMarketUnit = 2.6; %Cost price
 SellingPerMarketUnit = 5.19; %Selling Price
-CostPerPhase = 2.6*surveySize + 200; %$2.6 per person + %200 set up cost
+CostPerPhase = CostPerMarketUnit*surveySize + 200; %$2.6 per person + %200 set up cost
 ProfitPerMarketUnit = (SellingPerMarketUnit - CostPerMarketUnit);
 marketProb = zeros(maxPhase+1,length(m)); %vector to store p(market share)
 
