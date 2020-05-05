@@ -13,4 +13,3 @@ Important assumptions for this problem include discrete market share values and 
 <img align="center" src="TreeLayout.JPG" alt="Decision Tree">
 
 This project was a submission for MSCI 442 - Decision Making Under Uncertainty
-![](Project%20Report.pdf)
