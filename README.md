@@ -9,4 +9,4 @@ The decision tree is solved using first principles through Bayesian inferencing,
 
 <img align="center" src="TreeLayout.JPG" alt="Decision Tree">
 
-This project is a submission for MSCI 442 - Decision Making Under Uncertainty
+This project was a submission for MSCI 442 - Decision Making Under Uncertainty
