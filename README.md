@@ -9,6 +9,7 @@ The decision tree is solved using first principles through Bayesian inferencing 
 
 Important assumptions for this problem include discrete market share values and Bernoulli distribution of survey results.
 
+
 <img align="center" src="TreeLayout.JPG" alt="Decision Tree">
 
 This project was a submission for MSCI 442 - Decision Making Under Uncertainty
